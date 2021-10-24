@@ -1,0 +1,38 @@
+@mixin button_link($padding-top, $padding-right, $padding-bottom, $padding-left, $bg-color-link, $font-color-link, $link-font-size, $border-radius, $bg-color-hover, $font-color-hover, $box-shadow-offset-x, $box-shadow-offset-y, $box-shadow-blur-radius, $box-shadow-color){
+  @extend %button_link;
+  a{
+    padding: $padding-top $padding-right $padding-bottom $padding-left;
+    background-color: $bg-color-link;
+    color: $font-color-link;
+    font-size: $link-font-size;
+    border-radius: $border-radius;
+    &:hover{
+      background-color: $bg-color-hover;
+      color: $font-color-hover;
+      box-shadow: $box-shadow-offset-x $box-shadow-offset-y $box-shadow-blur-radius $box-shadow-color;
+    }
+  }
+}
+
+@mixin template_title($f_weight, $f-color, $b_display: block, $b_content, $b_text-align: left, $b_font-size, $b_color, $a_display: block, $a_content, $a_font-size, $a_color){
+  @extend %template_title;
+  color: $f-color;
+  font-weight: $f_weight;
+  &:before{
+    display: $b_display;
+    @if $b_display == block{
+      text-align: $b_text-align;
+      font-size: $b_font-size;
+      content:$b_content;
+      color: $b_color;
+    }
+  }
+  &:after{
+    display: $a_display;
+    @if $a_display == inline{
+      content: $a_content;
+      color: $a_color;
+      font-size: $a_font-size;
+    }
+  }
+}

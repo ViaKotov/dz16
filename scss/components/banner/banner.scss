@@ -1,20 +1,23 @@
 .banner{
+  width: 100%;
+  margin: 0 auto;
   font-family: Exo, sans-serif;
-  background-image: url("./../../../images/banner-background.png");
+  background-image: url("./../images/banner-background.png");
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
   height: 100vh;
-  min-height: 700px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   .banner__title{
     max-width: 55%;
     text-align: center;
     h1{
       font-weight: lighter;
-      font-size: 60px;
+      font-size: $banner-title-font-size;
     }
   }
   .banner__button{
@@ -23,33 +26,18 @@
       &:hover{
         opacity: .7;
         cursor: pointer;
+        width: $banner-button-width;
       }
     }
   }
   .banner__link{
     padding: 38px 0 0;
-    a{
-      display: block;
-      padding: 18px 50px;
-      background-color: $banner-link-bg-color;
-      text-decoration: none;
-      color: $banner-link-font-color;
-      text-transform: uppercase;
-      font-size: 16px;
-      border-radius: 3px;
-      transition: .3s;
-      &:hover{
-        background-color: $banner-link-hover-bg-color;
-        color: $banner-link-hover-font-color;
-        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
-        font-weight: bold;
-      }
-    }
+    @include button_link($banner-link-vertical-padding, $banner-link-horizontal-padding, $banner-link-vertical-padding, $banner-link-horizontal-padding, $banner-link-bg-color, $banner-link-font-color, $banner-link-font-size, 3px, $banner-link-hover-bg-color, $banner-link-hover-font-color, 0px, 0px, 6px, rgba(0, 0, 0, 0.4));
   }
   .banner__hint{
     padding: 19px 0 0;
     .banner__hint-text{
-      font-size: 14px;
+      font-size: $banner-hint-font-size;
       color: $banner-hint-font-color;
       font-weight: bold;
     }

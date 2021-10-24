@@ -1,0 +1,28 @@
+%button_link{
+  a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: $global-link-button-transition;
+    &:hover{
+      font-weight: bold;
+    }
+  }
+}
+
+%template_title{
+  font-size: $template-title-font-size;
+  font-family: Exo, sans-serif;
+  position: relative;
+  &:before{
+    width: 100%;
+    top: -0.858vw;
+    position: absolute;
+    text-transform: uppercase;
+  }
+  &:after{
+    width: 100%;
+    position: absolute;
+    bottom: -0.039vw;
+  }
+}
