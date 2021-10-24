@@ -1,0 +1,13 @@
+.features{
+  width: 100%;
+  background-color: #f6f5f3;
+  .container{
+    .row{
+      .features__title{
+        span{
+          @include template_title(1000, $template-title-font-color, block, 'new features', center, $template-title-b-font-size, $template-title-b-font-color, none, '', 0px, transparent);
+        }
+      }
+    }
+  }
+}
