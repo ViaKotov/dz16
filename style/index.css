@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Exo";
-  src: url("./../fonts/EXO/Exo-Thin.eot");
-  src: local("Exo Thin"), local("Exo-Thin"), url("./../fonts/EXO/Exo-Thin.eot?#iefix") format("embedded-opentype"), url("./../fonts/EXO/Exo-Thin.woff2") format("woff2"), url("./../fonts/EXO/Exo-Thin.woff") format("woff"), url("./../fonts/EXO/Exo-Thin.ttf") format("truetype"), url("./../fonts/EXO/Exo-Thin.svg#Exo-Thin") format("svg");
+  src: url("./../fonts/Exo/Exo-Regular.eot");
+  src: local("Exo Thin"), local("Exo-Thin"), url("./../fonts/Exo/Exo-Regular.eot?#iefix") format("embedded-opentype"), url("./../fonts/Exo/Exo-Regular.woff2") format("woff2"), url("./../fonts/Exo/Exo-Regular.woff") format("woff"), url("./../fonts/Exo/Exo-Regular.ttf") format("truetype"), url("./../fonts/Exo/Exo-Regular.svg#Exo-Thin") format("svg");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -16,27 +16,36 @@
   font-weight: bold;
 }
 
-.description .container .row .description__title span {
-  font-size: 1.56vw;
+.responsive .container .row .responsive__text .responsive__text-title span, .features .container .row .features__title span, .description .container .row .description__title span {
+  font-size: 1.5vw;
   font-family: Exo, sans-serif;
   position: relative;
 }
-.description .container .row .description__title span:before {
+.responsive .container .row .responsive__text .responsive__text-title span:before, .features .container .row .features__title span:before, .description .container .row .description__title span:before {
   width: 100%;
-  top: -0.858vw;
+  top: -1.2vw;
   position: absolute;
   text-transform: uppercase;
 }
-.description .container .row .description__title span:after {
+.responsive .container .row .responsive__text .responsive__text-title span:after, .features .container .row .features__title span:after, .description .container .row .description__title span:after {
   width: 100%;
   position: absolute;
-  bottom: -0.039vw;
+  bottom: -0.3vw;
+}
+
+.responsive .container .row .responsive__text .responsive__text-description span, .features .container .row > .features__item .features__item-description span, .description .container .row .description__text p {
+  color: #8a8a8a;
+  font-weight: 600;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Exo, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
 }
 
 .banner {
@@ -96,24 +105,22 @@ body {
 
 .description {
   width: 100%;
-  margin: 0 auto;
   background-color: #ececec;
 }
 .description .container {
-  padding: 220px 0 167px;
+  padding: 200px 0 167px;
   background-image: url("./../images/description_bg.svg");
-  background-position: right;
+  background-position: bottom right;
   background-repeat: no-repeat;
   background-color: #ffffff;
 }
 .description .container .row {
   margin: 0;
-}
-.description .container .row .col-6 {
-  padding: 0;
+  width: 872px;
+  padding: 0 150px;
 }
 .description .container .row .description__title {
-  max-width: 570px;
+  padding: 0;
 }
 .description .container .row .description__title span {
   padding: 0;
@@ -134,12 +141,96 @@ body {
   font-size: 1.56vw;
 }
 .description .container .row .description__text {
-  padding: 48px 0 0;
+  padding: 46px 0 0;
 }
 .description .container .row .description__text p {
   padding: 0;
+  margin: 0;
   font-size: 0.624vw;
+}
+.description .container .row .description__text p:not(:last-of-type) {
+  padding: 0 0 36px;
+}
+
+.features {
+  width: 100%;
+  background-color: #f6f5f3;
+}
+.features .container {
+  padding: 160px 0 184px;
+  background: url("./../images/features_bg-1.png") no-repeat left -30px top -20px, url("./../images/features_bg-2.png") no-repeat right top, url("./../images/features_bg-3.png") no-repeat right -7px bottom -80px;
+}
+.features .container .row .features__title span {
+  color: #282828;
   font-weight: 1000;
+  display: block;
+  text-align: center;
+}
+.features .container .row .features__title span:before {
+  display: block;
+  text-align: center;
+  font-size: 0.624vw;
+  content: "new features";
+  color: #ff6d6d;
+}
+.features .container .row .features__title span:after {
+  display: none;
+}
+.features .container .row > .features__item {
+  text-align: center;
+}
+.features .container .row > .features__item .features__item-icon {
+  padding: 92px 0 0;
+}
+.features .container .row > .features__item .features__item-title {
+  padding: 30px 0 0;
+  font-weight: 1000;
+  font-size: 0.936vw;
+}
+.features .container .row > .features__item .features__item-description {
+  padding: 20px 0 0;
+}
+.responsive {
+  width: 100%;
+  margin: 0 auto;
+}
+.responsive .container {
+  padding: 95px 0 145px;
+  background: url(./../images/responsive_bg.svg) no-repeat left -130px top;
+}
+.responsive .container .row .responsive__image {
+  background: url(./../images/responsive_mac.png) no-repeat top 12px left 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 367px;
+}
+.responsive .container .row .responsive__image img {
+  display: inline;
+}
+.responsive .container .row .responsive__text {
+  max-width: 500px;
+}
+.responsive .container .row .responsive__text .responsive__text-title span {
+  padding: 0;
+  color: #282828;
+  font-weight: 1000;
+}
+.responsive .container .row .responsive__text .responsive__text-title span:before {
+  display: block;
+  text-align: left;
+  font-size: 0.624vw;
+  content: "new design";
+  color: #ff8080;
+}
+.responsive .container .row .responsive__text .responsive__text-title span:after {
+  display: inline;
+  content: "....";
+  color: #ff8080;
+  font-size: 1.56vw;
+}
+.responsive .container .row .responsive__text .responsive__text-description {
+  padding: 38px 0 0;
 }
 
 /*# sourceMappingURL=index.css.map */

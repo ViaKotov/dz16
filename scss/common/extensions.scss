@@ -16,13 +16,18 @@
   position: relative;
   &:before{
     width: 100%;
-    top: -0.858vw;
+    top: -1.2vw;
     position: absolute;
     text-transform: uppercase;
   }
   &:after{
     width: 100%;
     position: absolute;
-    bottom: -0.039vw;
+    bottom: -0.3vw;
   }
+}
+
+%template_description{
+  color: $template-description-font-color;
+  font-weight: 600;
 }
