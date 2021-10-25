@@ -199,7 +199,7 @@ body {
   background: url(./../images/responsive_bg.svg) no-repeat left -130px top;
 }
 .responsive .container .row .responsive__image {
-  background: url(./../images/responsive_mac.png) no-repeat top 12px left 48px;
+  background: url(./../images/responsive_mac.png) no-repeat top 12px left 43px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,6 +231,44 @@ body {
 }
 .responsive .container .row .responsive__text .responsive__text-description {
   padding: 38px 0 0;
+}
+.our__team .container {
+  padding: 108px 150px 0;
+  background: url("./../images/our__team-bg.png") no-repeat;
+}
+.our__team .container .row {
+  text-align: center;
+}
+.our__team .container .row .team__avatar img {
+  border: solid 2px #1d1e24;
+  max-width: 76px;
+  transition: 0.5s;
+}
+.our__team .container .row .team__avatar img:hover {
+  border-color: #ffffff;
+}
+.our__team .container .row .team__full-name {
+  padding: 25px 0 0;
+}
+.our__team .container .row .team__full-name span {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.our__team .container .row .team__position span {
+  color: #ff6d6d;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.our__team .container .row .team__description {
+  padding: 38px 0 0;
+}
+.our__team .container .row .team__description span {
+  font-style: italic;
+  color: #c7c7c8;
+}
+.our__team .container .row .our__team-partners {
+  padding: 65px 0 0;
 }
 
 /*# sourceMappingURL=index.css.map */
