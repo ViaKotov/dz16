@@ -5,7 +5,7 @@
   background-image: url("./../images/banner-background.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   height: 100vh;
   text-align: center;
@@ -21,21 +21,22 @@
     }
   }
   .banner__button{
-    padding: 38px 0 0;
+    padding: vw-calc(38) 0 0;
     img{
+      width: $banner-button-width;
+      transition: $global-link-button-transition;
       &:hover{
         opacity: .7;
         cursor: pointer;
-        width: $banner-button-width;
       }
     }
   }
   .banner__link{
-    padding: 38px 0 0;
+    padding: vw-calc(38) 0 0;
     @include button_link($banner-link-vertical-padding, $banner-link-horizontal-padding, $banner-link-vertical-padding, $banner-link-horizontal-padding, $banner-link-bg-color, $banner-link-font-color, $banner-link-font-size, 3px, $banner-link-hover-bg-color, $banner-link-hover-font-color, 0px, 0px, 6px, rgba(0, 0, 0, 0.4));
   }
   .banner__hint{
-    padding: 19px 0 0;
+    padding: vw-calc(19) 0 0;
     .banner__hint-text{
       font-size: $banner-hint-font-size;
       color: $banner-hint-font-color;

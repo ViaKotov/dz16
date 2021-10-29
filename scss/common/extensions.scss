@@ -21,13 +21,32 @@
     text-transform: uppercase;
   }
   &:after{
-    width: 100%;
     position: absolute;
     bottom: -0.3vw;
   }
 }
 
+%template_input{
+  padding: 10px 24px;
+  outline: solid 2px transparent;
+  transition: .2s;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus-visible{
+    cursor: text;
+  }
+}
+
 %template_description{
   color: $template-description-font-color;
-  font-weight: 600;
+}
+
+%template__footer-title{
+  font-size: 22px;
+  color: #282828;
+}
+
+%template__row-width{
+  max-width: 1140px;
 }

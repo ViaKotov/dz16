@@ -20,19 +20,39 @@
   font-weight: $f_weight;
   &:before{
     display: $b_display;
-    @if $b_display == block{
-      text-align: $b_text-align;
-      font-size: $b_font-size;
-      content:$b_content;
-      color: $b_color;
-    }
+    text-align: $b_text-align;
+    font-size: $b_font-size;
+    content:$b_content;
+    color: $b_color;
   }
   &:after{
     display: $a_display;
-    @if $a_display == inline{
-      content: $a_content;
-      color: $a_color;
-      font-size: $a_font-size;
-    }
+    content: $a_content;
+    color: $a_color;
+    font-size: $a_font-size;
+  }
+}
+
+@mixin template_description($font-weight, $font-size){
+  @extend %template_description;
+  font-weight: $font-weight;
+  font-size: calc-font($font-size);
+}
+
+
+@mixin template_input($border-width, $border-color, $border-radius, $bg-color, $bg-hover-color, $text-color, $placeholder-color, $outline-color){
+  @extend %template_input;
+  border: solid $border-width $border-color;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  color: $text-color;
+  &:hover{
+    background-color: $bg-hover-color;
+  }
+  &::placeholder{
+    color: $placeholder-color;
+  }
+  &:focus-visible{
+    outline-color: $outline-color;
   }
 }

@@ -1,11 +1,11 @@
-.responsive{
+.resposive{
   width: 100%;
   margin: 0 auto;
   .container{
     padding: 95px 0 145px;
     background: url(./../images/responsive_bg.svg) no-repeat left -130px top;
     .row{
-      .responsive__image{
+      .resposive__image{
         background: url(./../images/responsive_mac.png) no-repeat top 12px left 43px;
         display: flex;
         justify-content: center;
@@ -15,18 +15,18 @@
           display: inline;//450 x 280
         }
       }
-      .responsive__text{
+      .resposive__text{
         max-width: 500px;
-        .responsive__text-title{
+        .resposive__text-title{
           span{
             padding: 0;
-            @include template_title(1000, $template-title-font-color, block, 'new design', left, $template-title-b-font-size, #ff8080, inline, '....', 1.56vw, #ff8080);
+            @include template_title(1000, $template-title-dark-font-color, block, 'new design', left, $template-title-b-font-size, #ff8080, inline, '....', 1.56vw, #ff8080);
           }
         }
-        .responsive__text-description{
+        .resposive__text-description{
           padding: 38px 0 0;
           span{
-            @extend %template_description;
+            @include template_description(normal, 16);
           }
         }
       }

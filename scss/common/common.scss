@@ -4,6 +4,8 @@ body{
   font-family: Exo, sans-serif;
 }
 
-.container{
-  max-width: 1440px;
+@media (min-width: 1440px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1440px;
+  }
 }
