@@ -1,58 +1,39 @@
-@mixin button_link($padding-top, $padding-right, $padding-bottom, $padding-left, $bg-color-link, $font-color-link, $link-font-size, $border-radius, $bg-color-hover, $font-color-hover, $box-shadow-offset-x, $box-shadow-offset-y, $box-shadow-blur-radius, $box-shadow-color){
-  @extend %button_link;
-  a{
-    padding: $padding-top $padding-right $padding-bottom $padding-left;
-    background-color: $bg-color-link;
-    color: $font-color-link;
-    font-size: $link-font-size;
-    border-radius: $border-radius;
-    &:hover{
-      background-color: $bg-color-hover;
-      color: $font-color-hover;
-      box-shadow: $box-shadow-offset-x $box-shadow-offset-y $box-shadow-blur-radius $box-shadow-color;
+@mixin template-title($title-align: left, $before-content: null, $before-align: left, $before-top-padding: 0, $after-content: null, $after-color: black){
+  font-size: 50px;
+  position: relative;
+  text-align: $title-align;
+  &:before{
+    @if $before-content == null{
+      display: none;
+    }
+    @else{
+      position: absolute;
+      display: block;
+      text-align: $before-align;
+      width: 100%;
+      content: $before-content;
+      font-size: 16px;
+      color: #fb8686;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      top: $before-top-padding;
     }
   }
-}
-
-@mixin template_title($f_weight, $f-color, $b_display: block, $b_content, $b_text-align: left, $b_font-size, $b_color, $a_display: block, $a_content, $a_font-size, $a_color){
-  @extend %template_title;
-  color: $f-color;
-  font-weight: $f_weight;
-  &:before{
-    display: $b_display;
-    text-align: $b_text-align;
-    font-size: $b_font-size;
-    content:$b_content;
-    color: $b_color;
-  }
   &:after{
-    display: $a_display;
-    content: $a_content;
-    color: $a_color;
-    font-size: $a_font-size;
-  }
-}
-
-@mixin template_description($font-weight, $font-size){
-  @extend %template_description;
-  font-weight: $font-weight;
-  font-size: calc-font($font-size);
-}
-
-
-@mixin template_input($border-width, $border-color, $border-radius, $bg-color, $bg-hover-color, $text-color, $placeholder-color, $outline-color){
-  @extend %template_input;
-  border: solid $border-width $border-color;
-  border-radius: $border-radius;
-  background-color: $bg-color;
-  color: $text-color;
-  &:hover{
-    background-color: $bg-hover-color;
-  }
-  &::placeholder{
-    color: $placeholder-color;
-  }
-  &:focus-visible{
-    outline-color: $outline-color;
+    @if $after-content == null{
+      display: none;
+    }
+    @else{
+      position: absolute;
+      content: $after-content;
+      font-size: 24px;
+      color: $after-color;
+      text-transform: uppercase;
+      font-weight: bolder;
+      letter-spacing: 3px;
+      right: -15px;
+      bottom: 4px;
+    }
   }
 }

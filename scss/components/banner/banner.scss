@@ -1,46 +1,56 @@
 .banner{
   width: 100%;
   margin: 0 auto;
-  font-family: Exo, sans-serif;
-  background-image: url("./../images/banner-background.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
+  background: url("./../images/banner-background.png") no-repeat center top 50%;
   background-size: cover;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .banner__title{
-    max-width: 55%;
-    text-align: center;
-    h1{
-      font-weight: lighter;
-      font-size: $banner-title-font-size;
-    }
-  }
-  .banner__button{
-    padding: vw-calc(38) 0 0;
-    img{
-      width: $banner-button-width;
-      transition: $global-link-button-transition;
-      &:hover{
-        opacity: .7;
-        cursor: pointer;
+  .container{
+    .row{
+      min-height: 800px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div{
+        text-align: center;
+        width: 75%;
       }
-    }
-  }
-  .banner__link{
-    padding: vw-calc(38) 0 0;
-    @include button_link($banner-link-vertical-padding, $banner-link-horizontal-padding, $banner-link-vertical-padding, $banner-link-horizontal-padding, $banner-link-bg-color, $banner-link-font-color, $banner-link-font-size, 3px, $banner-link-hover-bg-color, $banner-link-hover-font-color, 0px, 0px, 6px, rgba(0, 0, 0, 0.4));
-  }
-  .banner__hint{
-    padding: vw-calc(19) 0 0;
-    .banner__hint-text{
-      font-size: $banner-hint-font-size;
-      color: $banner-hint-font-color;
-      font-weight: bold;
+      .banner__title{
+        h1{
+          font-size: 75px;
+          font-weight: 200;
+        }
+      }
+      .banner__media{
+        padding: 44px 0 0;
+        a{
+          &:hover > img{
+            opacity: .7;
+          }
+        }
+      }
+      .banner__link{
+        padding: 39px 0 0;
+        a{
+          font-size: 20px;
+          display: inline-block;
+          padding: 12px 55px;
+          background-color: #ff6d6d;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #ffffff;
+          border-radius: 4px;
+          &:hover{
+            background-color: #7f84a1;
+          }
+        }
+      }
+      .banner__hint{
+        padding: 19px 0 0;
+        span{
+          color: gray;
+        }
+      }
     }
   }
 }

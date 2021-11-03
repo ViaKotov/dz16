@@ -1,33 +1,27 @@
 .description{
-  width: 100%;
-  background-color: #ececec;
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  background-image: url("./../images/description_bg.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
   .container{
-    padding: 200px 0 167px;
-    background-image: url("./../images/description_bg.svg");
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-color: #ffffff;
+    padding: 200px 0 120px;
     .row{
-      margin: 0;
-      @extend %template__row-width;
-      width: vw-calc(872);
-      padding: 0 vw-calc(150);
+      flex-direction: column;
+      div{
+        width: 50%;
+      }
       .description__title{
         padding: 0;
-        span{
-          padding: 0;
-          @include template_title(1000, $template-title-dark-font-color, block, 'new design', left, $template-title-b-font-size, #ff8080, inline, '....', 1.56vw, #ff8080);
+        h3{
+          @include template-title(left, "New design", left, -20px, "....", #fb8686);
         }
       }
-      .description__text{
-        padding: vw-calc(46) 0 0;
-        p{
-          padding: 0;
-          margin: 0;
-          @include template_description(600, 16);
-          &:not(:last-of-type){
-            padding: 0 0 vw-calc(36);
-          }
+      .description__paragraph{
+          padding: 35px 0 0;
+        span{
+          color: gray;
         }
       }
     }

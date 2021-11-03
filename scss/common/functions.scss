@@ -1,4 +1,0 @@
-@function vw-calc($pixel_size){
-  //в $f_size единицы измерения не указывать!!!
-  @return 0.039vw * $pixel_size;
-}

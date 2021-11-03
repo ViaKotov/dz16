@@ -1,0 +1,41 @@
+.global-features{
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f6f5f3;
+  background-image: url("./../images/features_bg-1.png"), url("./../images/features_bg-2.png"), url("./../images/features_bg-3.png");
+  background-position: top -15px left 100px, top -15px right 130px, bottom -85px right 75px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  .container{
+    padding: 150px 0 182px;
+    .row{
+      .global-features__title {
+        h3 {
+          @include template-title(center, "New features", center, -20px, null, #fb8686);
+        }
+      }
+      .global-features__item{
+        text-align: center;
+        padding: 74px 0 0;
+        .global-features__item-icon{
+          img{
+
+          }
+        }
+        .global-features__item-title{
+          padding: 26px 0 0;
+          h6{
+            font-size: 22px;
+            font-weight: bold;
+          }
+        }
+        .global-features__item-description{
+          padding: 2px 0 0;
+          span{
+            font-weight: bold;
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
