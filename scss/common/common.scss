@@ -12,12 +12,16 @@ a{
   transition: .5s;
 }
 
-@media (min-width: 1400px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    max-width: 1140px;
-    padding: 0;
-  }
-  .row{
-    margin: 0;
+input{
+  transition: .5s;
+}
+
+.row{
+  margin: 0;
+}
+
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1170px;
   }
 }

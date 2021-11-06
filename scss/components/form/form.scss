@@ -1,0 +1,79 @@
+.form{
+
+  .container{
+    background-color: #323969;
+    padding: 112px 0 85px;
+    .row{
+        padding: 88px 0 0;
+        .form__title{
+          h3{
+            @include template-title(#ffffff, center, "New features", center, -20px, "...", #ffffff, null);
+          }
+        }
+        .form__agreement{
+          padding: 44px 0 0;
+          text-align: center;
+          span{
+            color: gray;
+            a{
+              color: gray;
+              &:hover{
+                color: #ff6d6d;
+              }
+            }
+          }
+        }
+        input{
+          display: block;
+          margin: 0 auto;
+          width: calc(100% - 15px);
+          font-size: 18px;
+          border-radius: 4px;
+          label{
+            display: none;
+          }
+          &[type=text], &[type=email], &[type=password]{
+            padding: 12px 0 12px 27px;
+            border: solid 1px #999cb4;
+            background-color: #474d78;
+            &::placeholder{
+              text-transform: uppercase;
+              color: #ffffff;
+            }
+            &:hover{
+              cursor: pointer;
+              background-color: #434971;
+            }
+          }
+          &[type=button]{
+            padding: 12px 0;
+            border: solid 1px #ff6d6d;
+            background-color: #ff6d6d;
+            text-transform: uppercase;
+            color: #ffffff;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+            &:hover{
+              background-color: #fe6161;
+              box-shadow: 0 5px 8px rgba(0,0,0,0.7);
+            }
+
+          }
+        }
+      .col-md-3{
+        &:last-of-type{
+          position: relative;
+          &:before{
+            position: absolute;
+            content: "30 days free trial for all.";
+            background-image: url("./../images/signup-form-arrow.png");
+            background-repeat: no-repeat;
+            height: 60px;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}

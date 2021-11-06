@@ -1,24 +1,115 @@
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
 @media (min-width: 576px) {
-
+  .banner{
+    .container{
+      .row{
+        .banner__title{
+          max-width: 100%;
+          h1{
+            font-size: 35px;
+          }
+        }
+        .banner__media{
+          img{
+            width: 10%;
+          }
+        }
+        .banner__link{
+          a{
+            font-size: 14px;
+            padding: 6px 28px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Устройства Medium (планшеты, 768 пикселей и выше)
 @media (min-width: 768px) {
-
+  .banner{
+    .container{
+      .row{
+        .banner__title{
+          h1{
+            font-size: 45px;
+          }
+        }
+        .banner__link{
+          a{
+            font-size: 16px;
+            padding: 12px 36px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Устройства Large (настольные компьютеры, 992 пикселей и выше)
 @media (min-width: 992px) {
-
+  .banner{
+    .container{
+      .row{
+        .banner__title{
+          h1{
+            font-size: 40px;
+          }
+        }
+        .banner__link{
+          a{
+            font-size: 18px;
+            padding: 12px 55px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
 @media (min-width: 1200px) {
-
+  .banner{
+    .container{
+      .row{
+        .banner__title{
+          h1{
+            font-size: 50px;
+          }
+        }
+        .banner__link{
+          a{
+            font-size: 20px;
+            padding: 12px 55px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Устройства XX-Large (большие настольные компьютеры, 1400 пикселей и выше)
 @media (min-width: 1400px) {
-
+  .banner{
+    .container{
+      .row{
+        .banner__title{
+          max-width: 60%;
+          h1{
+            font-size: 60px;
+          }
+        }
+        .banner__media{
+          img{
+            width: auto;
+          }
+        }
+        .banner__link{
+          a{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,24 +1,11 @@
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
 @media (min-width: 576px) {
-  .global-features{
-    margin: 0 auto;
-    .container{
-      padding: 150px 0 182px;
-      background-color: #f6f5f3;
-    }
-  }
+
 }
 
 // Устройства Medium (планшеты, 768 пикселей и выше)
 @media (min-width: 768px) {
-  .global-features{
-    margin: 0 auto;
-    .container{
-      padding: 150px 0 182px;
-      background-color: #f6f5f3;
-      background-position: top -15px left -10px, top -15px right 30px, bottom -85px right -10px;
-    }
-  }
+
 }
 
 // Устройства Large (настольные компьютеры, 992 пикселей и выше)

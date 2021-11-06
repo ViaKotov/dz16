@@ -1,0 +1,93 @@
+// Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
+@media (min-width: 576px) {
+  .form{
+    .col-md-3{
+      &:last-of-type{
+        padding: 55px 0 0;
+        &:before{
+          left: -120px;
+          top: 21px;
+          background-position: left 141px top 7px;
+        }
+      }
+    }
+    .col-12{
+      &:last-of-type{
+        padding: 50px 0 0;
+      }
+    }
+  }
+}
+
+
+
+
+// Устройства Medium (планшеты, 768 пикселей и выше)
+@media (min-width: 768px) {
+  .form{
+    .col-md-3{
+      &:last-of-type{
+        padding: 0;
+        &:before{
+          background-position: left 0 top 16px;
+          left: 0;
+          top: -14px;
+          height: 70px;
+          font-size: 14px;
+        }
+      }
+    }
+    .col-12{
+      &:last-of-type{
+        padding: 0;
+      }
+    }
+  }
+}
+
+// Устройства Large (настольные компьютеры, 992 пикселей и выше)
+@media (min-width: 992px) {
+  .form{
+    .col-md-3{
+      &:last-of-type{
+        padding: 0;
+        &:before{
+          background-position: left 20px top 7px;
+          left: 0;
+          top: -22px;
+        }
+      }
+    }
+  }
+}
+
+// Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
+@media (min-width: 1200px) {
+  .form{
+    .col-md-3{
+      &:last-of-type{
+        padding: 0;
+        &:before{
+          background-position: left 20px top 7px;
+          left: 0;
+          top: -22px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .form{
+    .col-md-3{
+      &:last-of-type{
+        padding: 0;
+        &:before{
+          background-position: left 20px top 7px;
+          left: 0;
+          top: -22px;
+        }
+      }
+    }
+  }
+}

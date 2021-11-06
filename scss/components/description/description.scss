@@ -1,21 +1,19 @@
 .description{
-  width: 1440px;
-  margin: 0 auto;
   background-color: #ffffff;
-  background-image: url("./../images/description_bg.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
   .container{
+    background-image: url("./../images/description_bg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
     padding: 200px 0 120px;
     .row{
-      flex-direction: column;
+      margin: 0;
+      padding: 0 15px;
       div{
-        width: 50%;
       }
       .description__title{
         padding: 0;
         h3{
-          @include template-title(left, "New design", left, -20px, "....", #fb8686);
+          @include template-title(#000000, left, "New design", left, -20px, "....", #fb8686, null);
         }
       }
       .description__paragraph{

@@ -1,6 +1,7 @@
-@mixin template-title($title-align: left, $before-content: null, $before-align: left, $before-top-padding: 0, $after-content: null, $after-color: black){
-  font-size: 50px;
+@mixin template-title($color, $title-align: left, $before-content: null, $before-align: left, $before-top-padding: 0, $after-content: null, $after-color: black, $after-padding-right: null){
+  font-size: 40px;
   position: relative;
+  color: $color;
   text-align: $title-align;
   &:before{
     @if $before-content == null{
@@ -26,14 +27,16 @@
     }
     @else{
       position: absolute;
+      display: inline;
       content: $after-content;
       font-size: 24px;
       color: $after-color;
       text-transform: uppercase;
       font-weight: bolder;
       letter-spacing: 3px;
-      right: -15px;
+      right: $after-padding-right;
       bottom: 4px;
+      text-align: left;
     }
   }
 }

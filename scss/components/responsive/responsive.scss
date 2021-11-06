@@ -1,0 +1,21 @@
+.responsive{
+  .container{
+    background-image: url("./../images/responsive_bg.svg");
+    background-repeat: no-repeat;
+    background-position: left -97% bottom;
+    padding: 95px 0 145px;
+    .row{
+      .responsive__title{
+        h3{
+          @include template-title(#000000, left, "New design", left, -20px, "....", #fb8686, null);
+        }
+      }
+      .responsive_paragraph{
+        padding: 37px 0 0;
+        span{
+          @extend %template-paragraph;
+        }
+      }
+    }
+  }
+}

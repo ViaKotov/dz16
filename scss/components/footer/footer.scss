@@ -1,0 +1,105 @@
+.footer{
+  .container{
+    background-image: url("./../images/footer_bg.svg");
+    background-repeat: no-repeat;
+    background-position: right -93% top;
+    padding: 89px 0 100px;
+    .row{
+      .col-xl-3{
+        .footer__title {
+          h5{
+            position: relative;
+            &::after{
+              content: "";
+              position: absolute;
+              display: inline-block;
+              text-align: left;
+              font-size: 24px;
+              top: -6px;
+              background: url("./../images/footer_title-bg.png") no-repeat left 50% top 50%;
+              z-index: -1;
+              height: 48px;
+              width: 48px;
+              }
+            }
+          }
+        .footer__title {
+          h5{
+              font-size: 24px;
+            }
+          }
+        }
+        .footer__paragraph{
+          padding: 18px 0 0;
+          h5{
+            margin: 0;
+          }
+        }
+      .footer__list{
+          padding: 18px 0 0;
+        ul{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          li{
+            list-style-type: none;
+            a{
+              text-decoration: none;
+              color: #717171;
+              font-size: 16px;
+              &:hover{
+                color: #fb8686;
+              }
+            }
+          }
+        }
+      }
+      .footer__form{
+        form{
+          display: flex;
+          padding: 18px 0 0;
+          input{
+            &[type=email]{
+              padding: 12px 0 12px 27px;
+              text-transform: uppercase;
+              border: solid 1px #b8b8bf;
+              border-bottom-left-radius: 2px;
+              border-top-left-radius: 2px;
+              &:hover{
+                cursor: pointer;
+                background-color: #e7e7eb;
+              }
+              &:focus-visible{
+                outline: none;
+              }
+            }
+            &[type=button]{
+              padding: 12px 24px;
+              background: url("./../images/footer_button-icon.png") #ff6d6d no-repeat center center;
+              border: none;
+              border-bottom-right-radius: 5px;
+              border-top-right-radius: 5px;
+              &:hover{
+                background-color: #ed6565;
+              }
+            }
+          }
+        }
+      }
+      .footer__menu{
+        width: 50%;
+        padding: 18px 0 0;
+        ul{
+          display: flex;
+          justify-content: space-evenly;
+          li{
+            list-style-type: none;
+          }
+        }
+      }
+      .footer__title {
+        font-size: 28px;
+      }
+    }
+  }
+}
