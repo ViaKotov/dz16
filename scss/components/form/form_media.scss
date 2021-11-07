@@ -1,5 +1,5 @@
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
-@media (min-width: 576px) {
+@media (min-width: $media-sm) {
   .form{
     .col-md-3{
       &:last-of-type{
@@ -23,7 +23,7 @@
 
 
 // Устройства Medium (планшеты, 768 пикселей и выше)
-@media (min-width: 768px) {
+@media (min-width: $media-md) {
   .form{
     .col-md-3{
       &:last-of-type{
@@ -46,7 +46,7 @@
 }
 
 // Устройства Large (настольные компьютеры, 992 пикселей и выше)
-@media (min-width: 992px) {
+@media (min-width: $media-lg) {
   .form{
     .col-md-3{
       &:last-of-type{
@@ -62,7 +62,7 @@
 }
 
 // Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
-@media (min-width: 1200px) {
+@media (min-width: $media-xl) {
   .form{
     .col-md-3{
       &:last-of-type{
@@ -77,7 +77,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: $media-xxl) {
   .form{
     .col-md-3{
       &:last-of-type{

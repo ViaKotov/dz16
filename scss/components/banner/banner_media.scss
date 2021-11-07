@@ -1,5 +1,5 @@
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
-@media (min-width: 576px) {
+@media (min-width: $media-sm) {
   .banner{
     .container{
       .row{
@@ -26,7 +26,7 @@
 }
 
 // Устройства Medium (планшеты, 768 пикселей и выше)
-@media (min-width: 768px) {
+@media (min-width: $media-md) {
   .banner{
     .container{
       .row{
@@ -47,7 +47,7 @@
 }
 
 // Устройства Large (настольные компьютеры, 992 пикселей и выше)
-@media (min-width: 992px) {
+@media (min-width: $media-lg) {
   .banner{
     .container{
       .row{
@@ -68,7 +68,7 @@
 }
 
 // Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
-@media (min-width: 1200px) {
+@media (min-width: $media-xl) {
   .banner{
     .container{
       .row{
@@ -89,7 +89,7 @@
 }
 
 // Устройства XX-Large (большие настольные компьютеры, 1400 пикселей и выше)
-@media (min-width: 1400px) {
+@media (min-width: $media-xxl) {
   .banner{
     .container{
       .row{

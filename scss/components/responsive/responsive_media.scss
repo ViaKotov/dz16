@@ -1,5 +1,5 @@
 // Устройства Small (телефоны с горизонтальной ориентацией, 576 пикселей и выше)
-@media (min-width: 576px) {
+@media (min-width: $media-sm) {
   .responsive{
     .container{
       background-position: left 150% top 630%;
@@ -15,7 +15,7 @@
 }
 
 // Устройства Medium (планшеты, 768 пикселей и выше)
-@media (min-width: 768px) {
+@media (min-width: $media-md) {
 .responsive{
     .container{
       background-position: left 295% top 1100%;
@@ -36,7 +36,7 @@
 
 
 // Устройства Large (настольные компьютеры, 992 пикселей и выше)
-@media (min-width: 992px) {
+@media (min-width: $media-lg) {
   .responsive{
     .container{
       background-position: left -155% bottom;
@@ -46,7 +46,7 @@
 }
 
 // Устройства X-Large (большие настольные компьютеры, 1200 пикселей и выше)
-@media (min-width: 1200px) {
+@media (min-width: $media-xl) {
   .responsive{
     .container{
       background-position: left -70% bottom;
@@ -54,7 +54,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: $media-xxl) {
   .responsive{
     .container{
       padding: 95px 0 145px;
