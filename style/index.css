@@ -404,6 +404,21 @@ input {
 .team .container .row .col-md-4 .team__about span {
   color: #b3b4b6;
   font-style: italic;
+  position: relative;
+}
+.team .container .row .col-md-4 .team__about span:before {
+  position: absolute;
+  content: ' " ';
+  display: inline;
+  left: -7px;
+  top: -7px;
+}
+.team .container .row .col-md-4 .team__about span:after {
+  position: absolute;
+  content: ' " ';
+  display: inline;
+  right: -7px;
+  bottom: -3px;
 }
 .team .container .row .col-12 {
   padding: 70px 0 0;

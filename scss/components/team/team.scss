@@ -29,6 +29,21 @@
           span{
             color: $team-about-color;
             font-style: italic;
+            position: relative;
+            &:before{
+              position:absolute;
+              content: ' " ';
+              display: inline;
+              left: -7px;
+              top: -7px;
+            }
+            &:after{
+              position:absolute;
+              content: ' " ';
+              display: inline;
+              right: -7px;
+              bottom: -3px;
+            }
           }
         }
       }
