@@ -1,7 +1,7 @@
 .global-features{
   .container{
     padding: 150px 0 182px;
-    background-color: #f6f5f3;
+    background-color: $gl-features-bg-color;
     background-image: url("./../images/features_bg-1.png"), url("./../images/features_bg-2.png"), url("./../images/features_bg-3.png");
     background-position: top 196px left -122px, top -31px right -74px, bottom -85px right -10px;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -16,7 +16,11 @@
         padding: 74px 0 0;
         .global-features__item-icon{
           img{
-
+            filter: grayscale(0);
+            transition: .2s;
+            &:hover{
+              filter: grayscale(1);
+            }
           }
         }
         .global-features__item-title{
@@ -30,7 +34,7 @@
           padding: 2px 0 0;
           span{
             font-weight: bold;
-            color: gray;
+            color: $gl-features-item-desc-color;
           }
         }
       }

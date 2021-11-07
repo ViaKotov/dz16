@@ -1,7 +1,6 @@
 .form{
-
   .container{
-    background-color: #323969;
+    background-color: $form-bg-color;
     padding: 112px 0 85px;
     .row{
         padding: 88px 0 0;
@@ -14,11 +13,11 @@
           padding: 44px 0 0;
           text-align: center;
           span{
-            color: gray;
+            color: $form-agreement-color;
             a{
-              color: gray;
+              color: $form-agreement-link-color;
               &:hover{
-                color: #ff6d6d;
+                color: $form-agreement-hover-color;
               }
             }
           }
@@ -34,26 +33,26 @@
           }
           &[type=text], &[type=email], &[type=password]{
             padding: 12px 0 12px 27px;
-            border: solid 1px #999cb4;
-            background-color: #474d78;
+            border: solid 1px $form-input-text-border-color;
+            background-color: $form-input-text-bg-color;
             &::placeholder{
               text-transform: uppercase;
-              color: #ffffff;
+              color: $form-input-text-placeholder-color;
             }
             &:hover{
               cursor: pointer;
-              background-color: #434971;
+              background-color: $form-input-text-bg-hover-color;
             }
           }
           &[type=button]{
             padding: 12px 0;
-            border: solid 1px #ff6d6d;
-            background-color: #ff6d6d;
+            border: solid 1px $form-input-button-border-color;
+            background-color: $form-input-button-bg-color;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $form-input-button-color;
             box-shadow: 0 1px 4px rgba(0,0,0,0.5);
             &:hover{
-              background-color: #fe6161;
+              background-color: $form-input-button-bg-hover;
               box-shadow: 0 5px 8px rgba(0,0,0,0.7);
             }
 
@@ -70,7 +69,7 @@
             height: 60px;
             width: 100%;
             text-align: center;
-            color: #ffffff;
+            color: $form-signup-arrow-text-color-color;
           }
         }
       }

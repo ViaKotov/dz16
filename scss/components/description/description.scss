@@ -1,5 +1,5 @@
 .description{
-  background-color: #ffffff;
+  background-color: $description-bg-color;
   .container{
     background-image: url("./../images/description_bg.svg");
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
       .description__paragraph{
           padding: 35px 0 0;
         span{
-          color: gray;
+          color: $paragraph-color;
         }
       }
     }

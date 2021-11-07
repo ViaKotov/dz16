@@ -28,20 +28,20 @@
           font-size: 20px;
           display: inline-block;
           padding: 12px 55px;
-          background-color: #ff6d6d;
+          background-color: $banner-link-bg-color;
           text-transform: uppercase;
           text-decoration: none;
-          color: #ffffff;
+          color: $banner-link-color;
           border-radius: 4px;
           &:hover{
-            background-color: #7f84a1;
+            background-color: $banner-link-bg-hover;
           }
         }
       }
       .banner__hint{
         padding: 19px 0 0;
         span{
-          color: gray;
+          color: $banner-hint-color;
         }
       }
     }

@@ -7,7 +7,7 @@
         text-align: center;
         .team__avatar{
           img{
-            border: solid 2px #1d1e24;
+            border: solid 2px $team-img-border-color;
             max-width: 79px;
           }
         }
@@ -20,13 +20,13 @@
         }
         .team__position{
           span{
-            color: #ff6d6d;
+            color: $team-position-color;
           }
         }
         .team__about{
           padding: 24px 0 0;
           span{
-            color: #b3b4b6;
+            color: $team-about-color;
             font-style: italic;
           }
         }

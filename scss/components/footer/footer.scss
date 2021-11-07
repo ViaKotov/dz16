@@ -45,10 +45,10 @@
             list-style-type: none;
             a{
               text-decoration: none;
-              color: #717171;
+              color: $footer-list-link-color;
               font-size: 16px;
               &:hover{
-                color: #fb8686;
+                color: $footer-list-link-hover;
               }
             }
           }
@@ -62,12 +62,12 @@
             &[type=email]{
               padding: 12px 0 12px 27px;
               text-transform: uppercase;
-              border: solid 1px #b8b8bf;
+              border: solid 1px $footer-form-input-border-color;
               border-bottom-left-radius: 2px;
               border-top-left-radius: 2px;
               &:hover{
                 cursor: pointer;
-                background-color: #e7e7eb;
+                background-color: $footer-form-input-background-hover;
               }
               &:focus-visible{
                 outline: none;
@@ -75,12 +75,12 @@
             }
             &[type=button]{
               padding: 12px 24px;
-              background: url("./../images/footer_button-icon.png") #ff6d6d no-repeat center center;
+              background: url("./../images/footer_button-icon.png") $footer-form-button-background-color no-repeat center center;
               border: none;
               border-bottom-right-radius: 5px;
               border-top-right-radius: 5px;
               &:hover{
-                background-color: #ed6565;
+                background-color: $footer-form-button-background-hover;
               }
             }
           }
@@ -94,6 +94,13 @@
           justify-content: space-evenly;
           li{
             list-style-type: none;
+              img{
+                filter: grayscale(1);
+                transition: .3s;
+                &:hover{
+                  filter: grayscale(0);
+                }
+            }
           }
         }
       }
