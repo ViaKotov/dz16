@@ -399,6 +399,7 @@ input {
 }
 .team .container .row .col-md-4 .team__about {
   padding: 24px 0 0;
+  max-width: 90%;
 }
 .team .container .row .col-md-4 .team__about span {
   color: #b3b4b6;
